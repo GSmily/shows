@@ -1,9 +1,13 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+
+from .models import Show
 # Create your views here.
 
 def index(request):
-    return HttpResponsse('hey')
+    latest_show_list = Show.objects.order_by('-pub_date')[:5]
+    context = {'latest_show_list': latest_show_list}
+    return render(request, 'shows/index.html', context)
 
 def detail(request, show_id):
     return HttpResponse("You're looking at show %s." % show_id)
