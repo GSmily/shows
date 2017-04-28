@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse
 
 from .models import Show
@@ -10,7 +10,8 @@ def index(request):
     return render(request, 'shows/index.html', context)
 
 def detail(request, show_id):
-    return HttpResponse("You're looking at show %s." % show_id)
+    show = get_object_or_404(Show, pk=show_id)
+    return render(request, 'shows/detail.html', {'show': show})
 
 def rating(request, show_id):
     response = "You're looking at the rating of show %s."
