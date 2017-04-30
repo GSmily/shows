@@ -1,26 +1,26 @@
 ul {
-    color:#8F4A0D ;
+    color:#014409 ;
 }
 
 li a {
-    color: #8F4A0D;
+    color: #014409;
 }
 
 a {
-   color: #D38947 
+   color: #014409 
 }
 
 a:hover {
     size: 200%;
     font-weight: bolder;
-    color: #D38947;
+    color: #2E8639;
 }
 
 h1 {
-    color: #8F4A0D;
+    color: #014409;
     font-weight: bolder;
 }
 
 body {
-    background: #FFCEA3;
+    background: #86C78E;
 }
