@@ -1,5 +1,16 @@
+ul {
+    color : #095057;
+    font-size: 25pt;
+}
+
 li a {
     color: #095057;
+    font-size: 25pt;
+}
+
+a {
+    color: #095057;
+    font-size: 25pt;
 }
 
 a:hover {
@@ -11,6 +22,7 @@ a:hover {
 h1 {
     color: #095057;
     font-weight: bolder;
+    font-size: 60pt;
 }
 
 body {

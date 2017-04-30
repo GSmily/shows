@@ -10,7 +10,9 @@
 {% csrf_token %}
 {% for rating in show.rating_set.all %}
     <input type="radio" name="rating" id="rating{{ forloop.counter }}" value="{{ rating.id }}" />
-    <label for="rating{{ forloop.counter }}">{{ rating.rating_text }}</label><br />
+    <label for="rating{{ forloop.counter }}">{{ rating.rating_text }}</label>
 {% endfor %}
+<br>
+<br>
 <input type="submit" value="Rate" /> 
 </form>

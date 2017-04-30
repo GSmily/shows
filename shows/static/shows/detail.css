@@ -1,5 +1,11 @@
 li a {
     color: #122760;
+    font-size: 25pt;
+}
+
+form {
+    color: #122760;
+    font-size : 25pt;
 }
 
 a:hover {
@@ -11,6 +17,7 @@ a:hover {
 h1 {
     color: #122760;
     font-weight: bolder;
+    font-size: 60pt;
 }
 
 body {
