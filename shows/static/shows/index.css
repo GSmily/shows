@@ -1,0 +1,18 @@
+li a {
+    color: #095057;
+}
+
+a:hover {
+    size: 200%;
+    font-weight: bolder;
+    color: #2C7980;
+}
+
+h1 {
+    color: #095057;
+    font-weight: bolder;
+}
+
+body {
+    background: #77B4BA;
+}

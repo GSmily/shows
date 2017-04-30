@@ -1,3 +1,8 @@
+{% load staticfiles %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'shows/index.css' %}" />
+
+<h1> Show List </h1>
 {% if latest_show_list %}
     <ul>
     {% for show in latest_show_list %}
