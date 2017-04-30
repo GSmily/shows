@@ -1,0 +1,9 @@
+<h1>{{ show.show_text }}</h1>
+
+<ul>
+{% for rating in show.rating_set.all %}
+    <li>{{ rating.rating_text }} -- {{ rating.rates }} rate{{ rating.rates|pluralize }}</li>
+{% endfor %}
+</ul>
+
+<a href="{% url 'shows:detail' show.id %}">Rate again?</a>

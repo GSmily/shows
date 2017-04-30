@@ -13,7 +13,7 @@ class Show(models.Model):
 class Rating(models.Model):
     show = models.ForeignKey(Show, on_delete=models.CASCADE)
     rating_text = models.CharField(max_length=200)
-    rate = models.IntegerField(default=0)
+    rates = models.IntegerField(default=0)
 
     def __str__(self):
         return self.rating_text

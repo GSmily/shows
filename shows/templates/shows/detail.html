@@ -1,0 +1,12 @@
+<h1>{{ show.show_text }}</h1>
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<form action="{% url 'shows:rate' show.id %}" method="post">
+{% csrf_token %}
+{% for rating in show.rating_set.all %}
+    <input type="radio" name="rating" id="rating{{ forloop.counter }}" value="{{ rating.id }}" />
+    <label for="rating{{ forloop.counter }}">{{ rating.rating_text }}</label><br />
+{% endfor %}
+<input type="submit" value="Rate" /> 
+</form>
